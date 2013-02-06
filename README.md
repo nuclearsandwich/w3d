@@ -9,7 +9,7 @@ Load JavaScript and CSS files in `~/.w3`, based on their filename via Chrome Ext
 
 ## Installation
 
-1. Hit <chrome://extensions>
+1. Hit [chrome://extensions](chrome://extensions)
 2. Enable developer mode
 3. Load unpacked extension
 4. Navigate to your local .w3 folder and select the chrome-ext subfolder
