@@ -1,25 +1,33 @@
-A Google Chrome extension that executes JavaScript and CSS files in `~/.w3`, based on their filename.
-If you navigate to http://www.wikipedia.org, `~/.w3/wikipedia.org.js` and `~/.w3/wikipedia.org.css` will be included within the all pages.
+# w3d
 
-**Supported OS/Distro:** Arch Linux
+Load JavaScript and CSS files in `~/.w3`, based on their filename via Chrome Extension.
 
-![](https://dl.dropbox.com/s/5a1gjs15o49uyeg/beat3_sm.jpg)
+## Requirements
 
-# Install
+- Python3+ is needed to serve the files under ~/.w3 via `python -m http.server` command.
+- Chrome or Chromium.
 
-Python3+ is needed to serve the files under ~/.w3 via `python -m http.server` command.
+## Installation
 
-### On Arch Linux
+1. Hit <chrome://extensions>
+2. Enable developer mode
+3. Load unpacked extension
+4. Navigate to your local .w3 folder and select the chrome-ext subfolder
+5. Add .w3/bin/w3d to your user startup scripts.
 
-```bash
-$ make install-arch
-$ /etc/rc.d/w3d start
-```
+## Customization
 
-# Usage Examples
+If for some reason you really really need port 3132 for something, you can
+specify a different port by changing the port in both
+[chrome-ext/w3.js](chrome-ext/w3.js) and [bin/w3d](bin/w3d).
 
-* [github.com/azer/w3files](https://github.com/azer/w3files)
+
+## Runnin'
+
+Start w3d and add some stuff to your `~/.w3/` directory.
 
 # Credits
+
+[@azer](https://github.com/azer) for the original .w3 scripts and extension.
 
 Inspired from and based on [defunkt/dotjs](http://github.com/defunkt/dotjs) and [stewart/dotcss](https://github.com/stewart/dotcss/).

@@ -1,0 +1,7 @@
+#!/bin/sh
+w3dir="$HOME/.w3"
+
+if [ -d "$w3dir" ]; then
+	cd "$w3dir"
+	python3 -m http.server 3132
+fi
