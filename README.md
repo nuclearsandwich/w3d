@@ -1,19 +1,25 @@
 # w3d
 
-Load JavaScript and CSS files in `~/.w3`, based on their filename via Chrome Extension.
+Load JavaScript and CSS files in `~/.w3`, based on their filename via Browser Extension.
 
 ## Requirements
 
-- Python3+ is needed to serve the files under ~/.w3 via `python -m http.server` command.
-- Chrome or Chromium.
+- Ruby 1.9+ is needed to serve the files under ~/.w3 via the included w3d command
+- Chrome/Chromium or Firefox
 
-## Installation
+## Installing the browser extension in Chrome/Chromium
 
 1. Hit [chrome://extensions](chrome://extensions)
 2. Enable developer mode
 3. Load unpacked extension
 4. Navigate to your local .w3 folder and select the chrome-ext subfolder
-5. Add .w3/bin/w3d to your user startup scripts.
+
+## Installing the browser extension in Firefox
+
+1. Open [about://addons](about://addons)
+2. Click "Get Addons"
+3. Search for "dotjs"
+4. Find "dotjs 1.10 by Ricky Rosario" and install it. (Source: https://github.com/rlr/dotjs-addon)
 
 ## Customization
 
@@ -27,6 +33,8 @@ specify a different port by changing the port in both
 Start w3d and add some stuff to your `~/.w3/` directory.
 
 # Credits
+
+w3d 2.0 is a fork with minor changes from the djsd binary included in [defunkt/dotjs](https://github.com/defunkt/dotjs).
 
 [@azer](https://github.com/azer) for the original .w3 scripts and extension.
 
